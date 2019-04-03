@@ -1,0 +1,40 @@
+# Site settings
+title: Weiwei's Blog
+description: "Welcome to Weiwei's world!"
+url: 'https://zengweiwei0528.github.io'
+baseurl: ''
+google_analytics: 'UA-84272870-1'
+disqus_shortname: 'zengweiwei0528'
+
+author:
+  name: 'Zengweiwei'
+  email: zengweiwei0528@gmail.com
+  twitter_username: zengweiwei0528
+  facebook_username: zengweiwei0528
+  github_username:  zengweiwei0528
+  linkedin_username:  zengweiwei0528
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
